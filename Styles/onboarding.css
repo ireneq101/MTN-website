@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+section > .left {
+  width: 40%;
+}
+
+section > .left img{
+  width: 100%;
+  height: 100vh;
+}
+
+section > .right {
+  width: 60%;
+  text-align: center;
+  background: linear-gradient(white 30%,#FFC404);
+}
+
+section > .right div {
+  margin: 25% auto;
+}
+
+section > .right h2 {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  padding: 0 2% 10% 2%;
+  line-height: normal;
+}
+
+section > .right h2 span {
+  color: #FFC404;
+}
+
+section .right a {
+  background-color: #FFC404;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  padding: 1rem 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section .right > div > article {
+  width: 100%;
+  margin-top: 5%;
+}
+
+section .right > div > article a {
+  width: 100%;
+  padding: 1rem 7rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: #FFC404;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  section > .left {
+    width: 100%;
+    display: none;
+  }
+  
+  section > .left img{
+    display: none;
+  }
+  
+  section > .right {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(white 50%,#FFC404);
+  }
+  
+  section > .right div {
+    margin: 40% auto;
+  }
+  
+  section > .right h2 {
+    font-size: 2rem;
+  }
+  
+  section .right > div > article {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  section .right > div > article a {
+    width: 100%;
+    padding: 1rem 6rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  section > .left {
+    width: 100%;
+  }
+  
+  section > .left img{
+    display: none;
+  }
+  
+  section > .right {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(white 50%,#FFC404);
+  }
+  
+  section > .right div {
+    margin: 40% auto;
+  }
+  
+  section > .right h2 {
+    font-size: 3.5rem;
+  }
+  
+  section .right > div > article {
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  section .right > div > article a {
+    width: 100%;
+    padding: 1rem 10rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}

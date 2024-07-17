@@ -1,0 +1,952 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header .irene {
+  display: flex;
+  /* grid-template-columns: auto auto auto; */
+  width: 100%;
+  background-color: #FFC404;
+  padding: 0 4%;
+}
+
+header > .irene > .logo {
+  width: 50%;
+}
+
+header > .irene > .logo img {
+  width: 20%;
+}
+
+header > .irene > nav {
+  width: 100%;
+  text-align: right;
+  padding: 2% 0;
+}
+
+header > .irene > nav a {
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  padding: 0 3%;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+header > .irene > div > .open {
+  display: none;
+  cursor: pointer;
+}
+
+header > .irene > div > .close {
+  display: none;
+  cursor: pointer;
+}
+
+header > .nav2 {
+  display:  none;
+}
+
+header > .search-box {
+  width: 60%;
+  text-align: right;
+  padding: 2% 0;
+}
+
+header > .search-box input {
+  background: transparent;
+  border: 2px solid black;
+  text-align: right;
+}
+
+section > .first-sect {
+  width: 100%;
+  display: flex;
+}
+
+section > .first-sect .left {
+  width: 35%;
+  /* background-color: #FFC404; */
+} 
+
+section > .first-sect .left img {
+  width: 100%;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+section > .first-sect .right {
+  width: 65%;
+  background: linear-gradient(to right, white, #FFC404 50%);
+}
+
+section > .first-sect .right div {
+  margin: 15% auto;
+  width: 70%;
+}
+
+section > .first-sect .right h1 {
+  font-size: 4rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+section > .first-sect .right p {
+  font-size: 1.7rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+section > .cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50vh;
+}
+
+section > .cards-container .cards {
+  border-radius: 10px;
+  padding: 3rem;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  background: #FFC404;
+}
+
+
+section > .cards-container .cards:hover {
+    width: 100%;
+}
+
+section > .cards-container .cards:hover{
+    top: -5px;
+    box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+    text-align: center;
+}
+
+
+section > .cards-container .cards h3 {
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+section > .cards-container .cards p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+section > .device {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  width: 100%;
+}
+
+section > .device > .devices {
+  width: 100%;
+  margin-top: 15%;
+}
+
+section > .device > .devices img {
+  width: 15%;
+  text-align: center;
+}
+
+section > .device > .devices:nth-child(4) img {
+  width: 10%;
+}
+
+
+section > .device > .devices p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+section > .third-sect {
+  display:  flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15%;
+}
+
+section >.third-sect .picture {
+  width: 35%;
+}
+
+section > .third-sect .picture img {
+  width: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+section .third-sect > .access {
+  width: 65%;
+  padding-top: 15%;
+  padding-left: 5%;
+}
+
+section .third-sect > .access h1 {
+  font-size: 4rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+section > .third-sect > .access button {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #FFC404;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 5%;
+}
+
+section > .third-sect > .access button:hover {
+  background-color: antiquewhite;
+  transition: 0.3s ease-in-out;
+  cursor:pointer;
+}
+
+footer {
+  background: black;
+  padding: 4% 4%;
+}
+
+footer > hr {
+  color: #FFC404;
+}
+
+footer > .parent {
+  color: #F8FCFB;
+}
+
+footer > .parent > .top {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+footer > .parent > .top img {
+  width: 15%;
+  border-radius: 100px;
+}
+
+footer > .parent > .bottom {
+  display: flex;
+  gap: 21%;
+  width: 100%;
+  padding-top: 4%;
+}
+
+footer > .parent h3 {
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: #FFC404;
+}
+
+footer > .parent h3:hover {
+  color: white;
+  transition: 5ms ease-in-out;
+}
+
+footer > .parent > .bottom p {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  padding-bottom: 2%;
+}
+
+footer > .parent > .bottom p:hover {
+  color: #FFC404;
+  transition: 5ms ease-in-out;
+}
+
+footer > .parent > .bottom .right p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  padding-top: 30%;
+}
+
+footer > .parent > .right2 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header > .irene {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto auto auto; */
+    width: 100%;
+    background-color: #FFC404;
+    padding: 0 4%;
+  }
+  
+  header > .irene > .logo {
+    width: 50%;
+  }
+  
+  header > .irene > .logo img {
+    width: 25%;
+  }
+
+  header > .irene > nav {
+    width: 100%;
+    text-align: right;
+    padding: 2% 0;
+    display: none;
+  }
+
+  header > .irene > nav a {
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    padding: 0 3%;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+
+  header > .irene > div {
+    text-align: center;
+    width: 7%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  header > .irene > div .open {
+    width:  100%;
+    display: block;
+  }
+
+  header > .irene > div .open.hide {
+      display: none;
+  }
+
+  header > .irene > div .close {
+      width: 150%;
+  }
+
+  header > .irene > div .close.hide {
+      display: block;
+  }
+  
+  header > .nav2.visible {
+    display: flex;
+    flex-direction: column;
+    background: var(--Ter, #F8FCFB);
+    gap: 7px;
+    z-index: 5%;
+    padding: 10%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+  header > .nav2.visible a {
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > .nav2.visible a:hover {
+    color: #FFC404;
+  }
+  
+  section > .first-sect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50%;
+  }
+  
+  section > .first-sect .left {
+    width: 100%;
+    /* background-color: #FFC404; */
+  } 
+  
+  section > .first-sect .left img {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  section > .first-sect .right {
+    width: 100%;
+    background: linear-gradient(to bottom, white, #FFC404 80%);
+  }
+  
+  section > .first-sect .right div {
+    margin: 15% auto;
+    width: 100%;
+  }
+  
+  section > .first-sect .right h1 {
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+  }
+  
+  section > .first-sect .right p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    max-width: 80%;
+  }
+  
+  section > .cards-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    align-content: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 4%;
+  }
+
+  section > .cards-container .cards:hover{
+    top: -5px;
+    box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
+    min-width: 100%;
+    min-height: 20vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+  }
+  
+  section > .cards-container .cards h3 {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+  
+  section > .cards-container .cards p {
+    font-size: 1rem;
+  }
+  
+  section > .device {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 40%;
+    gap: 40px;
+  }
+  
+  section > .device > .devices {
+    width: 100%;
+    margin-top: 15%;
+  }
+  
+  section > .device > .devices img {
+    width: 25%;
+    text-align: center;
+  }
+
+  section > .device > .devices:nth-child(2) img {
+    width: 14%;
+  }
+
+  section > .device > .devices:nth-last-child(2) img {
+    width: 14%;
+  }
+  
+  section > .device > .devices p {
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  section > .third-sect {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15%;
+  }
+  
+  section >.third-sect .picture {
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  section > .third-sect .picture img {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  section .third-sect > .access {
+    width: 100%;
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+  
+  section .third-sect > .access h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  section > .third-sect > .access button {
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 5%;
+  }
+  
+  section > .third-sect > .access button:hover {
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+  } 
+
+  footer {
+    background: black;
+    padding: 4% 4%;
+  }
+  
+  footer > hr {
+    color: #FFC404;
+  }
+  
+  footer > .parent {
+    color: #F8FCFB;
+  }
+  
+  footer > .parent > .top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 4%;
+    gap: 7%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  footer > .parent > .top img {
+    width: 40%;
+    border-radius: 100px;
+  }
+  
+  footer > .parent > .bottom {
+    display: flex;
+    gap: 21%;
+    width: 100%;
+    padding-top: 4%;
+  }
+  
+  footer > .parent h3 {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: #FFC404;
+  }
+  
+  footer > .parent h3:hover {
+    color: white;
+    transition: 5ms ease-in-out;
+  }
+  
+  footer > .parent > .bottom p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+  }
+  
+  footer > .parent > .bottom p:hover {
+    color: #FFC404;
+    transition: 5ms ease-in-out;
+  }
+  
+  footer > .parent > .bottom .right p {
+    display: none;
+  }
+
+  footer > .parent > .right2 {
+    display: flex;
+    padding-top: 10%;
+  }
+
+  footer > .parent > .right2 p:hover {
+    color: #FFC404;
+    transition: 5ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header > .irene {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto auto auto; */
+    width: 100%;
+    background-color: #FFC404;
+    padding: 0 4%;
+  }
+  
+  header > .irene > .logo {
+    width: 50%;
+  }
+  
+  header > .irene > .logo img {
+    width: 25%;
+  }
+
+  header > .irene > nav {
+    width: 100%;
+    text-align: right;
+    padding: 2% 0;
+    display: none;
+  }
+
+  header > .irene > nav a {
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    padding: 0 3%;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+
+  header > .irene > div {
+    text-align: center;
+    width: 7%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  header > .irene > div .open {
+    width:  100%;
+    display: block;
+  }
+
+  header > .irene > div .open.hide {
+    display: none;
+  }
+
+  header > .irene > div .close {
+    width: 150%;
+  }
+
+  header > .irene > div .close.hide {
+   display: block;
+  }
+  
+  header > .nav2.visible {
+    display: flex;
+    flex-direction: column;
+    background: var(--Ter, #F8FCFB);
+    gap: 15px;
+    z-index: 5%;
+    padding: 10%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+
+  header > .nav2.visible a {
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > .nav2.visible a:hover {
+    color: #FFC404;
+  }
+
+  header > .nav2 {
+    display: none;
+  }
+  
+  header > .search-box {
+    width: 60%;
+    text-align: right;
+    padding: 2% 0;
+  }
+  
+  header > .search-box input {
+    background: transparent;
+    border: 2px solid black;
+    text-align: right;
+  }
+  
+  section > .first-sect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50%;
+  }
+  
+  section > .first-sect .left {
+    width: 100%;
+    /* background-color: #FFC404; */
+  } 
+  
+  section > .first-sect .left img {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  section > .first-sect .right {
+    width: 100%;
+    padding: 3rem 0;
+    background: linear-gradient(to bottom, white, #FFC404 80%);
+    text-align: center;
+  }
+  
+  section > .first-sect .right div {
+    margin: 15% auto;
+    width: 100%;
+  }
+  
+  section > .first-sect .right h1 {
+    font-size: 3.5rem;
+    padding-bottom: 3%;
+  }
+  
+  section > .first-sect .right p {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    max-width: 100%;
+    padding: 0 2%;
+  }
+  
+  section > .cards-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    align-content: center;
+    width: 100%;
+    height: 55vh;
+    padding: 0 4%;
+  }
+
+  section > .cards-container .cards:hover{
+    top: -5px;
+    box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
+    min-width: 100%;
+    min-height: 33vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+  }
+
+  section > .cards-container .cards {
+    padding: 7rem;
+  }
+  
+  section > .cards-container .cards h3 {
+    font-size: 3.4rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+  
+  section > .cards-container .cards p {
+    font-size: 2rem;
+  }
+  
+  section > .device {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50%;
+  }
+  
+  section > .device > .devices {
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  section > .device > .devices:nth-child(2) img {
+    width: 21%;
+  }
+
+  section > .device > .devices:nth-last-child(2) img {
+    width: 19%;
+  }
+  
+  section > .device > .devices img {
+    width: 25%;
+    text-align: center;
+  }
+  
+  section > .device > .devices p {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  section > .third-sect {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15%;
+  }
+  
+  section >.third-sect .picture {
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  section > .third-sect .picture img {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  section .third-sect > .access {
+    width: 100%;
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+  
+  section .third-sect > .access h1 {
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding-right: 2%;
+  }
+  
+  section > .third-sect > .access button {
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 5%;
+  }
+  
+  section > .third-sect > .access button:hover {
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+  } 
+
+  footer {
+    background: black;
+    padding: 4% 4%;
+  }
+  
+  footer > hr {
+    color: #FFC404;
+  }
+  
+  footer > .parent {
+    color: #F8FCFB;
+  }
+  
+  footer > .parent > .top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 4%;
+    gap: 5%;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+  }
+  
+  footer > .parent > .top img {
+    width: 10%;
+    border-radius: 100px;
+  }
+  
+  footer > .parent > .bottom {
+    display: flex;
+    gap: 21%;
+    width: 100%;
+    padding-top: 4%;
+  }
+  
+  footer > .parent h3 {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: #FFC404;
+  }
+  
+  footer > .parent h3:hover {
+    color: white;
+    transition: 5ms ease-in-out;
+  }
+  
+  footer > .parent > .bottom p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    padding-bottom: 3%;
+  }
+  
+  footer > .parent > .bottom p:hover {
+    color: #FFC404;
+    transition: 5ms ease-in-out;
+  }
+  
+  footer > .parent > .bottom .right p {
+    display: none;
+  }
+
+  footer > .parent > .right2 {
+    display: flex;
+    padding-top: 10%;
+  }
+
+  footer > .parent > .right2 p:hover {
+    color: #FFC404;
+    transition: 5ms ease-in-out;
+  }
+}

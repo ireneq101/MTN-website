@@ -1,0 +1,546 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .irene {
+  display: flex;
+  /* grid-template-columns: auto auto auto; */
+  width: 100%;
+  background-color: #FFC404;
+  padding: 0 4%;
+}
+
+header > .irene > .logo {
+  width: 50%;
+}
+
+header > .irene > .logo img {
+  width: 20%;
+}
+
+header > .irene > nav {
+  width: 100%;
+  text-align: right;
+  padding: 2% 0;
+}
+
+header > .irene > nav a {
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  padding: 0 3%;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+header > .irene > div > .open {
+  display: none;
+  cursor: pointer;
+}
+
+header > .irene > div > .close {
+  display: none;
+  cursor: pointer;
+}
+
+header > .nav2 {
+  display:  none;
+}
+
+header > .search-box {
+  width: 60%;
+  text-align: right;
+  padding: 2% 0;
+}
+
+header > .search-box input {
+  background: transparent;
+  border: 2px solid black;
+  text-align: right;
+}
+
+section .container {
+  display: flex;
+  width: 100%;
+}
+
+section .container > .lefty {
+  width: 40%;
+}
+
+section .container > .lefty img {
+  width: 100%;
+  height: 100vh;
+}
+
+section .container > .righty {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+section .container > .righty h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  margin: 5% 0 0 0;
+}
+
+section .container> .righty form {
+  display: flex;
+  flex-direction: column;
+  margin: 6% auto;
+  gap: 20px;
+  max-width: 60%;
+}
+
+section .container > .righty > form > p {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+section .container > .righty > form > label {
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section .container > .righty > form > input, button {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section .container > .righty > form > div {
+  display: flex;
+  gap: 40%;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section .container > .righty > form > div > .check {
+  display: flex;
+  gap: 5px;
+}
+
+section .container > .righty > form > div > .check > #checkbox:checked {
+  accent-color: #FFC404;
+}
+
+section .container > .righty > form button, a {
+  background-color: #FFC404;
+  border: none;
+  border-radius: 10px;
+}
+
+section .container > .righty > form  a {
+  width: 100%;
+  /* padding: 1rem 15.7rem; */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: #FFC404;
+  border: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header > .irene {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto auto auto; */
+    width: 100%;
+    background-color: #FFC404;
+    padding: 0 4%;
+  }
+  
+  header > .irene > .logo {
+    width: 50%;
+  }
+  
+  header > .irene > .logo img {
+    width: 25%;
+  }
+
+  header > .irene > nav {
+    width: 100%;
+    text-align: right;
+    padding: 2% 0;
+    display: none;
+  }
+
+  header > .irene > nav a {
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    padding: 0 3%;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+
+  header > .irene > div {
+    text-align: center;
+    width: 7%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  header > .irene > div .open {
+    width:  100%;
+    display: block;
+  }
+
+  header > .irene > div .open.hide {
+      display: none;
+  }
+
+  header > .irene > div .close {
+      width: 150%;
+  }
+
+  header > .irene > div .close.hide {
+      display: block;
+  }
+  
+  header > .nav2.visible {
+    display: flex;
+    flex-direction: column;
+    background: var(--Ter, #F8FCFB);
+    gap: 7px;
+    z-index: 5%;
+    padding: 10%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+  header > .nav2.visible a {
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > .nav2.visible a:hover {
+    color: #FFC404;
+  }
+  
+  section .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  section .container > .lefty {
+    width: 40%;
+    display: none;
+  }
+  
+  section .container > .lefty img {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  section .container > .righty {
+    text-align: center;
+    width: 100%;
+    height: 130vh;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  
+  section .container > .righty h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  section .container> .righty form {
+    display: flex;
+    flex-direction: column;
+    margin: 6% auto;
+    gap: 30px;
+    max-width: 100%;
+    /* padding: 0 6%; */
+  }
+  
+  section .container > .righty > form > p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  section .container > .righty > form > label {
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  section .container > .righty > form > input, button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  section .container> .righty form input {
+    border: 1px solid black;
+  }
+  
+  section .container > .righty > form > div {
+    display: flex;
+    gap: 20%;
+    font-weight: 400;
+  }
+  
+  section .container > .righty > form > div > .check {
+    display: flex;
+    gap: 5px;
+  }
+  
+  section .container > .righty > form > div > .check > #checkbox:checked {
+    accent-color: #FFC404;
+  }
+  
+  section .container > .righty > form > article {
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  section .container > .righty > form > article a {
+    width: 100%;
+    padding: 1rem 15.7rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-color: #FFC404;
+    border: none;
+    border-radius: 10px;
+  } 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header > .irene {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto auto auto; */
+    width: 100%;
+    background-color: #FFC404;
+    padding: 0 4%;
+  }
+  
+  header > .irene > .logo {
+    width: 50%;
+  }
+  
+  header > .irene > .logo img {
+    width: 25%;
+  }
+
+  header > .irene > nav {
+    width: 100%;
+    text-align: right;
+    padding: 2% 0;
+    display: none;
+  }
+
+  header > .irene > nav a {
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    padding: 0 3%;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+
+  header > .irene > div {
+    text-align: center;
+    width: 7%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  header > .irene > div .open {
+    width:  100%;
+    display: block;
+  }
+
+  header > .irene > div .open.hide {
+      display: none;
+  }
+
+  header > .irene > div .close {
+      width: 150%;
+  }
+
+  header > .irene > div .close.hide {
+      display: block;
+  }
+  
+  header > .nav2.visible {
+    display: flex;
+    flex-direction: column;
+    background: var(--Ter, #F8FCFB);
+    gap: 7px;
+    z-index: 5%;
+    padding: 10%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+  header > .nav2.visible a {
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > .nav2.visible a:hover {
+    color: #FFC404;
+  }
+  
+  section .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  section .container > .lefty {
+    width: 40%;
+    display: none;
+  }
+  
+  section .container > .lefty img {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  section .container > .righty {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  
+  section .container > .righty h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  section .container> .righty form {
+    display: flex;
+    flex-direction: column;
+    margin: 6% auto;
+    gap: 30px;
+    max-width: 100%;
+    /* padding: 0 6%; */
+  }
+  
+  section .container > .righty > form > p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+  }
+  
+  section .container > .righty > form > label {
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  section .container > .righty > form > input, button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  section .container> .righty form input {
+    border: 1px solid black;
+  }
+  
+  section .container > .righty > form > div {
+    display: flex;
+    gap: 53%;
+    font-weight: 400;
+  }
+  
+  section .container > .righty > form > div > .check {
+    display: flex;
+    gap: 5px;
+  }
+  
+  section .container > .righty > form > div > .check > #checkbox:checked {
+    accent-color: #FFC404;
+  } 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section .container> .righty form input {
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 800px) {
+  section .container {
+    display: flex;
+    width: 100%;
+  }
+
+  section .container > .lefty {
+    width: 65%;
+    display: flex;
+  }
+
+  section .container > .lefty img {
+    width: 100%;
+  }
+
+  section .container > .righty {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+  }
+  
+  section .container> .righty form input {
+    border: 1px solid black;
+  }
+
+  section .container > .righty {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  section .container > .righty > form > div {
+    display: flex;
+    gap: 30%;
+    font-weight: 400;
+  }
+}
