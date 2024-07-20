@@ -196,11 +196,12 @@ section .container > .righty > form > .ire {
   font-size: 1.7rem;
 }
 
-section .container > .righty > form > .click {
+section .container > .righty > form .click {
   display: flex;
-  gap: 40%;
+  /* gap: 38%; */
+  justify-content: space-between;
+  font-weight: 400;
 }
-
 section .container > .righty > form > .click .check {
   display: flex;
   gap: 5px;
@@ -252,7 +253,6 @@ section > .container > .righty a button:hover {
     background-color: #FFC404;
     padding: 0 4%;
     z-index: 4;
-    position: relative;
   }
   
   header > .irene > .logo {
@@ -307,14 +307,15 @@ section > .container > .righty a button:hover {
   header > .nav2.visible {
     display: flex;
     flex-direction: column;
-    background: var(--Ter, #F8FCFB);
+    background: white;
     gap: 7px;
     z-index: 5%;
     padding: 10%;
     position: fixed;
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    z-index: 6;
 }
 
   header > .nav2.visible a {
@@ -397,8 +398,7 @@ section > .container > .righty a button:hover {
   
   section .container > .righty > form > .click {
     display: flex;
-    gap: 5px;
-    grid-auto-columns: auto;
+    /* gap: 16px; */
     font-weight: 400;
     width: 100%;
     min-width: 100%;
@@ -406,15 +406,16 @@ section > .container > .righty a button:hover {
   
   section .container > .righty > form > .click .check {
     display: flex;
-    gap: 2px;
+    gap: 5px;
   }
   
   section .container > .righty > form > .click .check > #checkbox:checked {
     accent-color: #FFC404;
   }
 
-  section .container > .righty > form > .click > p {
+  section .container > .righty > form > .click  p {
     text-align: right;
+    font-size: 13px;
   }
   
   section .container > .righty > form > article {
@@ -444,6 +445,7 @@ section > .container > .righty a button:hover {
     width: 100%;
     background-color: #FFC404;
     padding: 0 4%;
+    z-index: 4;
   }
   
   header > .irene > .logo {
@@ -498,20 +500,23 @@ section > .container > .righty a button:hover {
   header > .nav2.visible {
     display: flex;
     flex-direction: column;
-    background: var(--Ter, #F8FCFB);
+    background: white;
     gap: 7px;
     z-index: 5%;
     padding: 10%;
     position: fixed;
     width: 100%;
     height: 100vh;
+    position: absolute;
+    z-index: 6;
 }
 
   header > .nav2.visible a {
     color: black;
+    background-color: transparent;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
     font-style: normal;
     line-height: 140%;
     text-decoration: none;
@@ -585,7 +590,7 @@ section > .container > .righty a button:hover {
   
   section .container > .righty > form .click {
     display: flex;
-    gap: 53%;
+    /* gap: 53%; */
     font-weight: 400;
   }
   
@@ -599,13 +604,7 @@ section > .container > .righty a button:hover {
   } 
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  section .container> .righty form input {
-    border: 1px solid black;
-  }
-}
-
-@media screen and (max-width: 1280px) and (min-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 1280px) {
   section .container {
     display: flex;
     width: 100%;
@@ -638,19 +637,9 @@ section > .container > .righty a button:hover {
     padding: 0;
   }
 
-  section .container > .righty > form > div {
+  section .container > .righty > form .click {
     display: flex;
-    gap: 30%;
+    /* gap: 17%; */
     font-weight: 400;
-  }
-}
-
-@media screen and (max-width: 926px) and (min-width: 390px) {
-  section .container > .righty > form > .click {
-    display: flex;
-    gap: 25px;
-    font-weight: 400;
-    width: 100%;
-    min-width: 100%;
   }
 }

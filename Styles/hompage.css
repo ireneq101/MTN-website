@@ -74,6 +74,7 @@ section {
 
 section > .first-sect {
   width: 100%;
+  height: 70vh;
   display: flex;
 }
 
@@ -817,9 +818,6 @@ footer > .parent > .right2 {
     color: #FFC404;
   }
 
-  header > .nav2 {
-    display: none;
-  }
   
   header > .search-box {
     width: 60%;
