@@ -68,10 +68,82 @@ header > .search-box input {
   text-align: right;
 }
 
+section {
+  width: 100%;
+}
+
 section > .first-sect {
   width: 100%;
   display: flex;
 }
+
+/* section > .first-sect > .slider {
+  width: 100%;
+  height: 500px;
+  padding: 0 2%;
+  overflow: hidden;
+}
+
+section > .first-sect > .slider .slides {
+  display: flex;
+}
+
+section > .first-sect > .slider > .slides input {
+  display: flex;
+  border: 2px solid red;
+}
+
+section > .first-sect > .slider > .slides input .slide {
+  width: 20%;
+  transition: 2s;
+  text-align: center;
+}
+
+section > .first-sect > .slider > .slides input .slide img {
+  width: 100%;
+  height: 300px;
+}
+
+section > .first-sect > .slider > .slides .navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+section > .first-sect > .slider > .slides > .navigation-manual .manual-btn {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+section > .first-sect > .slider > .slides > .navigation-manual .manual-btn:not(:last-child) {
+  margin-right: 40px;
+  position: absolute;
+}
+
+section > .first-sect > .slider > .slides .manual-btn:hover {
+  background: red;
+} */
+
+/* section > .first-sect > .slider > .slides .radio1:checked ~ .first {
+  margin-left: 0;
+} */
+
+/* section > .first-sect > .slider > .slides .radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+section > .first-sect > .slider > .slides .radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+section > .first-sect > .slider > .slides .radio4:checked ~ .first {
+  margin-left: -60%;
+} */
 
 section > .first-sect .left {
   width: 35%;
@@ -116,6 +188,7 @@ section > .cards-container {
   justify-content: space-evenly;
   width: 100%;
   height: 50vh;
+  padding: 0 4%;
 }
 
 section > .cards-container .cards {
@@ -127,20 +200,24 @@ section > .cards-container .cards {
   background: #FFC404;
 }
 
+section > .cards-container .cards:first-child {
+  padding: 3rem 7rem;
+}
 
-section > .cards-container .cards:hover {
-    width: 100%;
+section > .cards-container .cards:last-child {
+  padding: 3rem 7rem;
 }
 
 section > .cards-container .cards:hover{
-    top: -5px;
-    box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
-    min-width: 100%;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-    cursor:pointer;
-    text-align: center;
+  width: 100%;
+  top: -15px;
+  box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor:pointer;
+  text-align: center;
 }
 
 
@@ -160,7 +237,7 @@ section > .cards-container .cards p {
 
 section > .device {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   text-align: center;
   width: 100%;
 }
@@ -171,14 +248,17 @@ section > .device > .devices {
 }
 
 section > .device > .devices img {
-  width: 15%;
+  width: 19%;
   text-align: center;
 }
 
 section > .device > .devices:nth-child(4) img {
-  width: 10%;
+  width: 12%;
 }
 
+section > .device > .devices:nth-child(5) img {
+  width: 15%;
+}
 
 section > .device > .devices p {
   font-size: 1rem;
@@ -236,6 +316,7 @@ section > .third-sect > .access button:hover {
 footer {
   background: black;
   padding: 4% 4%;
+  margin-top: 5%;
 }
 
 footer > hr {
@@ -415,6 +496,7 @@ footer > .parent > .right2 {
   section > .first-sect .right div {
     margin: 15% auto;
     width: 100%;
+    padding-left: 3%;
   }
   
   section > .first-sect .right h1 {
@@ -432,15 +514,23 @@ footer > .parent > .right2 {
   section > .cards-container {
     display: grid;
     grid-template-columns: auto;
-    gap: 20px;
+    gap: 30px;
     align-content: center;
     width: 100%;
     height: 50vh;
-    padding: 0 4%;
+  }
+
+  section > .cards-container .cards {
+    border-radius: 10px;
+    padding: 3rem;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #FFC404;
   }
 
   section > .cards-container .cards:hover{
-    top: -5px;
+    top: -15px;
     box-shadow: 0px 30px 50px 0px rgba(5, 5, 6, 0.15);
     min-width: 100%;
     min-height: 20vh;
@@ -448,6 +538,14 @@ footer > .parent > .right2 {
     overflow: hidden;
     transition: 0.3s ease-in-out;
     cursor:pointer;
+  }
+
+  section > .cards-container .cards:first-child {
+    padding: 3rem;
+  }
+
+  section > .cards-container .cards:last-child {
+    padding: 3rem;
   }
   
   section > .cards-container .cards h3 {
@@ -465,27 +563,41 @@ footer > .parent > .right2 {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
-    width: 100%;
-    margin-top: 40%;
-    gap: 40px;
+    width: 95%;
+    margin: 45% 1% 20% 3%;
+    /* margin-right: 20%; */
+    padding: 5% 0;
+    /* gap: 0px; */
+    border: 2px solid black;
+    /* margin: 0 4%; */
   }
   
   section > .device > .devices {
+    padding: 10% 0;
     width: 100%;
-    margin-top: 15%;
+    /* padding-top: 30%; */
+    /* margin: 0 24%; */
   }
   
   section > .device > .devices img {
-    width: 25%;
+    width: 35%;
     text-align: center;
   }
 
   section > .device > .devices:nth-child(2) img {
-    width: 14%;
+    width: 25%;
   }
 
-  section > .device > .devices:nth-last-child(2) img {
-    width: 14%;
+  section > .device > .devices:nth-child(4) img {
+    width: 25%;
+  }
+
+  section > .device > .devices:nth-child(5) img {
+    width: 35%;
+  }
+
+  section > .device > .devices:last-child img {
+    width: 32%;
   }
   
   section > .device > .devices p {
@@ -516,27 +628,31 @@ footer > .parent > .right2 {
   
   section .third-sect > .access {
     width: 100%;
+    padding: 0 3%;
     padding-top: 15%;
-    padding-left: 5%;
   }
   
   section .third-sect > .access h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
+    padding: 0 2%;
   }
   
   section > .third-sect > .access button {
     border: none;
     border-radius: 15px;
+    font-size: 1rem;
     padding: 1rem;
+    min-width: 100%;
     margin-top: 5%;
   }
   
   section > .third-sect > .access button:hover {
-    background-color: antiquewhite;
-    transition: 0.3s ease-in-out;
-    cursor:pointer;
+    background: black;
+    border: 2px solid #FFC404;
+    transition: all 300ms ease-in-out;
+    color: #FFC404;
   } 
 
   footer {
@@ -785,6 +901,14 @@ footer > .parent > .right2 {
   section > .cards-container .cards {
     padding: 7rem;
   }
+
+  section > .cards-container .cards:first-child {
+    padding: 7rem 3rem;
+  }
+
+  section > .cards-container .cards:last-child {
+    padding: 7rem 3rem;
+  }
   
   section > .cards-container .cards h3 {
     font-size: 3.4rem;
@@ -802,21 +926,28 @@ footer > .parent > .right2 {
     grid-template-columns: auto auto;
     gap: 60px;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
     margin-top: 50%;
+    border: 2px solid black;
+    padding: 7% 0;
   }
   
   section > .device > .devices {
     width: 100%;
-    margin-top: 0%;
+    margin-top: 6%;
   }
 
   section > .device > .devices:nth-child(2) img {
     width: 21%;
   }
 
-  section > .device > .devices:nth-last-child(2) img {
-    width: 19%;
+  section > .device > .devices:nth-child(4) img {
+    width: 23%;
+  }
+
+  section > .device > .devices:nth-child(5) img {
+    width: 25%;
   }
   
   section > .device > .devices img {
@@ -866,7 +997,7 @@ footer > .parent > .right2 {
   section > .third-sect > .access button {
     border: none;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
     margin-top: 5%;
   }
   
@@ -907,7 +1038,7 @@ footer > .parent > .right2 {
   
   footer > .parent > .bottom {
     display: flex;
-    gap: 21%;
+    gap: 15%;
     width: 100%;
     padding-top: 4%;
   }

@@ -12,11 +12,11 @@
   }
   
   section > .left {
-    width: 100%;
-  }
-  
-  section > .left img{
-    display: none;
+    width: 40%;
+    background-image: url(/Images/onboard2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   section > .right {
@@ -27,8 +27,7 @@
   }
   
   section > .right div {
-    margin: 25% auto;
-    width: 100%;
+    margin: 40%;
   }
   
   section > .right h2 {

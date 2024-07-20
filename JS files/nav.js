@@ -13,7 +13,3 @@ close.addEventListener('click', ()=>{
     close.classList.remove('hide')
     nav2.classList.toggle('visible')
 })
-
-{/* <script> */}
-AOS.init();
-{/* </script> */}

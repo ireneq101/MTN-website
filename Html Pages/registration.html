@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/registration.css">
+  <title>Register your account</title>
+</head>
+<body>
+  <section>
+    <div class="pic">
+      <a href="/Html Pages/homepage.html"><img src="/Images/download.png" alt=""></a>
+      <h1>Create Account</h1>
+    </div>
+
+    <form action="">
+      <div>
+        <article class="child">
+          <input type="text" name="fullname" name="fullname" id="fullname" placeholder="">
+          <label for="">Full Name</label>
+        </article>
+  
+        <article class="child">
+          <input type="number" name="phone" name="phone" id="phone" placeholder="" pattern="[+-90-9]{11, }">
+          <span>Invalid phone number</span>
+          <label for="">Phone Number</label>
+        </article>
+  
+        <article class="child">
+          <input type="email" name="email" name="email" id="email" placeholder="">
+          <span>Invalid email address</span>
+          <label for="email">Email</label>
+        </article>
+      </div>
+
+      <div>
+        <article class="child">
+          <input type="text" name="gender" name="gender" id="gender" placeholder="">
+          <label for="">Gender</label>
+        </article>
+  
+        <article class="child">
+          <input type="text" name="birth" name="birth" id="birth" placeholder="">
+          <label for="">Date of Birth</label>
+        </article>
+  
+        <article class="child">
+          <input type="text" name="city" name="city" id="city" placeholder="">
+          <label for="">State/City/Country</label>
+        </article>
+      </div>
+    </form>
+
+    <article>
+      <a href="/Html Pages/activate-phone.html">
+        <button type="submit">Create Account</button>
+      </a>
+    </article>
+  </section>
+</body>
+</html>
