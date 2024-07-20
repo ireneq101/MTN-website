@@ -101,7 +101,7 @@ section > form > div > .child label {
 }
 
 section > form > div > .child input:is(:focus, :not(:placeholder-shown)) ~ label {
-  top: -25px;
+  top: -22px;
   color: #FFC404;
   font-size: 1.7rem;
 }
