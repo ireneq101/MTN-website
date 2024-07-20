@@ -260,7 +260,7 @@ section > .container > .righty a button:hover {
   }
   
   header > .irene > .logo img {
-    width: 25%;
+    width: 30%;
   }
 
   header > .irene > nav {
@@ -285,6 +285,7 @@ section > .container > .righty a button:hover {
     width: 7%;
     align-content: center;
     justify-content: center;
+    padding-top: 2%;
   }
 
   header > .irene > div .open {
@@ -453,7 +454,7 @@ section > .container > .righty a button:hover {
   }
   
   header > .irene > .logo img {
-    width: 25%;
+    width: 30%;
   }
 
   header > .irene > nav {
@@ -490,7 +491,7 @@ section > .container > .righty a button:hover {
   }
 
   header > .irene > div .close {
-      width: 150%;
+      width: 100%;
   }
 
   header > .irene > div .close.hide {
