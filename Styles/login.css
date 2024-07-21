@@ -88,7 +88,7 @@ section .container > .righty {
 
 section .container > .righty h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
   margin: 5% 0 0 0;
@@ -104,7 +104,7 @@ section .container> .righty form {
 }
 
 section .container > .righty > form > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
 }
@@ -175,7 +175,7 @@ section .container > .righty > form > .ire {
   section .container > .righty > form > .ire > .enter label {
   /* text-align: left; */
   font-family: 'Segoe UI', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   position: absolute;
   left: 10px;
@@ -186,12 +186,12 @@ section .container > .righty > form > .ire {
   position: absolute;
   left: var(--x);
   top: var(--y);
-  padding: 0 3px;
+  padding: 3px;
   margin: 0;
 }
 
   section .container > .righty > form > .ire > .enter input:is(:focus, :not(:placeholder-shown)) ~ label {
-  top: -22px;
+  top: -23px;
   color: #FFC404;
   font-size: 1.7rem;
 }
@@ -205,17 +205,24 @@ section .container > .righty > form .click {
 section .container > .righty > form > .click .check {
   display: flex;
   gap: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 section .container > .righty > form > .click .check > #checkbox:checked {
   accent-color: #FFC404;
 }
 
-section .container > .righty > form > .click p{
+section .container > .righty > form > .click > p{
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   width: auto;
+}
+
+section .container > .righty > form > .click > p:hover {
+  color: #c59a0d;
 }
 
 section .container > .righty > form button, a {
@@ -323,12 +330,12 @@ section > .container > .righty a button:hover {
     color: black;
     background-color: transparent;
     font-family: 'Segoe UI', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     font-style: normal;
     line-height: 140%;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -362,7 +369,7 @@ section > .container > .righty a button:hover {
   
   section .container > .righty h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 10%;
   }
   
@@ -391,6 +398,11 @@ section > .container > .righty a button:hover {
   section .container > .righty > form > .ire input, button {
     width: 100%;
     font-size: 1rem;
+  }
+
+  section .container > .righty > form > .ire > .enter label {
+    font-size: 1rem;
+    padding-top: 4px;
   }
 
   /* section .container> .righty form .ire {
@@ -517,7 +529,7 @@ section > .container > .righty a button:hover {
     background-color: transparent;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     line-height: 140%;
     text-decoration: none;

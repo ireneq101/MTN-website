@@ -20,7 +20,7 @@ section > .pic img {
 
 section > .pic h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
   /* margin: 5% 0 0 0; */
@@ -85,7 +85,7 @@ section > form > div > .child span {
 section > form > div > .child label {
   /* text-align: left; */
   font-family: 'Segoe UI', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   position: absolute;
   left: 10px;
@@ -101,7 +101,7 @@ section > form > div > .child label {
 }
 
 section > form > div > .child input:is(:focus, :not(:placeholder-shown)) ~ label {
-  top: -22px;
+  top: -23px;
   color: #FFC404;
   font-size: 1.7rem;
 }
@@ -124,7 +124,7 @@ section > article a button {
   width: 100%;
   /* padding: 1rem 15.7rem; */
   font-family: 'Segoe UI', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   color: black;
@@ -150,7 +150,7 @@ section > article a button:hover {
   }
   
   section > .pic h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0 0 20% 0;
   }
   
@@ -175,8 +175,9 @@ section > article a button:hover {
   }
 
   section > form > div > .child label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+    padding-top: 4px;
   }
 
   section > form > div > .child input:is(:focus, :not(:placeholder-shown)) ~ label {
@@ -223,7 +224,7 @@ section > article a button:hover {
   }
 
   section > .pic h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0 10% 0;
   }
 
